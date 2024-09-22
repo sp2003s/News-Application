@@ -1,8 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const Navbar = () => {
 
     const today = new Date().toLocaleDateString()
+
+    const navigate = useNavigate();
 
   return (
     <div className='flex flex-col pt-2 shadow-lg'>
@@ -12,7 +16,7 @@ const Navbar = () => {
         <h1 className='text-6xl p-2 text-center font-bold font-customFont'>Daily Dispatch</h1>
 
         <div className='pt-1'>
-          <button className='mx-1 p-1 w-[90px] border-2 border-red-600 rounded text-white bg-red-600'>Subscribe</button>
+          <button onClick={ () => {navigate("/subscribe")}} className='mx-1 p-1 w-[90px] border-2 border-red-600 rounded text-white bg-red-600'>Subscribe</button>
           <button className='mx-1 p-1 w-[90px] border-2 border-red-600 rounded text-red-600 hover:bg-red-600 hover:text-white hover:transition-all'>Login</button>
         </div>
 

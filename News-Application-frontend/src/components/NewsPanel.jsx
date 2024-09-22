@@ -1,8 +1,11 @@
 import React from "react";
 import { newsData } from "../assets/assets.js";
+import Navbar  from "./Navbar";
 
 const NewsPanel = () => {
   return (
+    <>
+    <Navbar/>
     <div className="mt-10">
       <h1 className="text-center font-serif text-2xl">NEWS</h1>
       <hr className="p-1 mt-3 border-t-2 border-black" />
@@ -54,6 +57,7 @@ const NewsPanel = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
