@@ -17,8 +17,8 @@ const NewsPanel = () => {
           {newsData.map(function (newsItem, index) {
             return (
               <div key={index}> <hr className="p-1 border-t-1 border-black"  />
-                <div className="text-2xl font-light">{newsItem.headline}</div>
-                <div className="text-lg font-sans">{newsItem.subheading}</div>
+                <div className="text-2xl font-light cursor-pointer">{newsItem.headline}</div>
+                <div className="text-lg font-sans cursor-pointer">{newsItem.subheading}</div>
                 <br />
               </div>
             );
@@ -31,8 +31,8 @@ const NewsPanel = () => {
           {newsData.map(function (newsItem, index) {
             return (
               <div key={index}> <hr className="p-1 border-t-1 border-black"  />
-                <div className="text-2xl font-light">{newsItem.headline}</div>
-                <div className="text-lg font-sans">{newsItem.subheading}</div>
+                <div className="text-2xl font-light cursor-pointer">{newsItem.headline}</div>
+                <div className="text-lg font-sans cursor-pointer">{newsItem.subheading}</div>
                 <br />
               </div>
             );
@@ -45,8 +45,8 @@ const NewsPanel = () => {
           {newsData.map(function (newsItem, index) {
             return (
               <div key={index}> <hr className="p-1 border-t-1 border-black"  />
-                <div className="text-2xl font-light">{newsItem.headline}</div>
-                <div className="text-lg font-sans">{newsItem.subheading}</div>
+                <div className="text-2xl font-light cursor-pointer">{newsItem.headline}</div>
+                <div className="text-lg font-sans cursor-pointer">{newsItem.subheading}</div>
                 <br />
               </div>
             );
